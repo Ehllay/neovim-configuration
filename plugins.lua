@@ -36,7 +36,32 @@ local plugins = {
       require("core.utils").load_mappings("dap_python")
     end,
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        -- defaults 
+        "vim",
+        "lua",
 
+        "python",
+
+        -- web dev 
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "tsx",
+        "json",
+        -- "vue", "svelte",
+
+       -- low level
+        "c",
+        "rust",
+        "zig"
+      },
+    },
+  },
   {
     "jose-elias-alvarez/null-ls.nvim",
     ft = {"python"},
@@ -50,7 +75,9 @@ local plugins = {
       ensure_installed = {
         "black",
         "debugpy",
+        "html-lsp",
         "mypy",
+        "prettier",
         "ruff",
         "pyright",
         "lua-language-server",
