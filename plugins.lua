@@ -82,6 +82,7 @@ local plugins = {
         "pyright",
         "lua-language-server",
         "rust-analyzer",
+
       },
     },
   },
