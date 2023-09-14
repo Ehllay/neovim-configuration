@@ -70,6 +70,11 @@ local plugins = {
     end,
   },
   {
+    "wakatime/vim-wakatime",
+    enabled = true,
+    lazy = false,
+  },
+  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
