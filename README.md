@@ -1,5 +1,5 @@
 # neovim-configuration
 
-My customized Neovim config, for writing code in Python, Lua as well as Rust. More languages will be added
+My customized Neovim config, for writing code in Python, Lua as well as Rust
 
-Requires NVChad
+Requires [NVChad](https://nvchad.com/)
