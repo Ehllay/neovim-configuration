@@ -1,5 +1,17 @@
 local plugins = {
   {
+    "glepnir/dashboard-nvim",
+    event = "VimEnter",
+    setup = function()
+      require("dashboard").setup {
+        theme = "doom"
+      }
+    end,
+    config = function()
+     return require "custom.configs.dashboard"
+    end
+  },
+  {
     "rcarriga/nvim-dap-ui",
     dependencies = "mfussenegger/nvim-dap",
     config = function()
