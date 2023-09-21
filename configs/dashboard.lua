@@ -52,16 +52,16 @@ require("dashboard").setup {
         action = 'Telescope find_files'
       },
       {
-        icon = '  ',
+        icon = '󰥔  ',
         icon_hl = 'Title',
-        desc = 'Find Dotfiles',
-        key = 'd',
-        keymap = 'SPC f d',
+        desc = 'Recent',
+        key = 'r',
+        keymap = 'SPC f o',
         key_hl = 'Number',
-        action = 'lua print(3)'
+        action = 'Telescope oldfiles'
       },
       {
-        icon = '󰚰  ',
+        icon = '  ',
         icon_hl = 'Title',
         desc = 'Update Plugins',
         key = 'u',
