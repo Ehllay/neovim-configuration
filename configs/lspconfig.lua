@@ -26,5 +26,12 @@ lspconfig.lua_ls.setup({
 lspconfig.rust_analyzer.setup({
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = {"rust"}
+  filetypes = {"rust"},
+  settings = {
+    ["rust-analyzer"] = {
+      procMacro = {
+        enable = true
+      },
+    }
+  }
 })
