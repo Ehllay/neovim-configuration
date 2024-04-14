@@ -83,7 +83,7 @@ require("dashboard").setup {
       "",
       package_manager_stats.count .. ' plugins loaded in ' .. package_manager_stats.time .. ' ms',
       "",
-      "󰌠  󱘗  󰢱  󰌝"
+      "󰌠  󱘗  󰢱  󰌝   "
     }  --your footer
   }
   }

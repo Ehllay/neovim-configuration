@@ -10,6 +10,16 @@ lspconfig.html.setup({
   capabilities = capabilities,
   filetypes = {"html"},
 })
+lspconfig.tsserver.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    preferences = {
+      disableSuggestions = true,
+    }
+  },
+  filetypes = {"javascript", "typescript"},
+})
 
 lspconfig.pyright.setup({
   on_attach = on_attach,

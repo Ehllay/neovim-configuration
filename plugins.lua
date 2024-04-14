@@ -75,11 +75,11 @@ local plugins = {
     },
   },
   {
-    "jose-elias-alvarez/null-ls.nvim",
-    ft = {"python"},
-    opts = function()
-      return require "custom.configs.null-ls"
-    end,
+    "mfussenegger/nvim-lint",
+    event = "VeryLazy",
+    config = function ()
+      require "custom.configs.lint"
+    end
   },
   {
     "wakatime/vim-wakatime",
@@ -98,6 +98,7 @@ local plugins = {
         "black",
         "debugpy",
         "html-lsp",
+        "typescript-language-server",
         "mypy",
         "prettier",
         "ruff",
@@ -125,7 +126,7 @@ local plugins = {
   {
     "mrcjkb/rustaceanvim",
     ft = {"rust"},
-  }
+  },
 }
 return plugins
 
